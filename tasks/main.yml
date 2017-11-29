@@ -26,7 +26,6 @@
     group: "{{ sshd_config_group }}"
     mode: "{{ sshd_config_mode }}"
     validate: "{{ sshd_binary }} -t -f %s"
-  notify: reload_sshd
 
 - name: Service enabled and running
   service:
