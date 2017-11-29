@@ -37,3 +37,9 @@
 - name: Register that this role has run
   set_fact: sshd_has_run=true
   when: sshd_has_run is not defined
+
+- name: Reload the SSH service
+  service:
+    name: "{{ sshd_service }}"
+    state: reloaded
+  when: sshd_allow_reload and ansible_virtualization_type != 'docker'
