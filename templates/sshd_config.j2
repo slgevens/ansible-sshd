@@ -74,7 +74,6 @@ Match {{ match["Condition"] }}
 {{ body_option("AddressFamily",sshd_AddressFamily) -}}
 {{ body_option("ListenAddress",sshd_ListenAddress) -}}
 {{ body_option("Protocol",sshd_Protocol) -}}
-{{ body_option("HostKey",sshd_HostKey) -}}
 {{ body_option("AcceptEnv",sshd_AcceptEnv) -}}
 {{ body_option("AllowAgentForwarding",sshd_AllowAgentForwarding) -}}
 {{ body_option("AllowGroups",sshd_AllowGroups) -}}
@@ -117,7 +116,6 @@ Match {{ match["Condition"] }}
 {{ body_option("KerberosOrLocalPasswd",sshd_KerberosOrLocalPasswd) -}}
 {{ body_option("KerberosTicketCleanup",sshd_KerberosTicketCleanup) -}}
 {{ body_option("KexAlgorithms",sshd_KexAlgorithms) -}}
-{{ body_option("KeyRegenerationInterval",sshd_KeyRegenerationInterval) -}}
 {{ body_option("LogLevel",sshd_LogLevel) -}}
 {{ body_option("LoginGraceTime",sshd_LoginGraceTime) -}}
 {{ body_option("MACs",sshd_MACs) -}}
@@ -136,11 +134,8 @@ Match {{ match["Condition"] }}
 {{ body_option("PrintLastLog",sshd_PrintLastLog) -}}
 {{ body_option("PrintMotd",sshd_PrintMotd) -}}
 {{ body_option("PubkeyAuthentication",sshd_PubkeyAuthentication) -}}
-{{ body_option("RSAAuthentication",sshd_RSAAuthentication) -}}
 {{ body_option("RekeyLimit",sshd_RekeyLimit) -}}
 {{ body_option("RevokedKeys",sshd_RevokedKeys) -}}
-{{ body_option("RhostsRSAAuthentication",sshd_RhostsRSAAuthentication) -}}
-{{ body_option("ServerKeyBits",sshd_ServerKeyBits) -}}
 {{ body_option("StrictModes",sshd_StrictModes) -}}
 {{ body_option("Subsystem",sshd_Subsystem) -}}
 {{ body_option("SyslogFacility",sshd_SyslogFacility) -}}
@@ -150,7 +145,6 @@ Match {{ match["Condition"] }}
 {{ body_option("UseDNS",sshd_UseDNS) -}}
 {{ body_option("UseLogin",sshd_UseLogin) -}}
 {{ body_option("UsePAM",sshd_UsePAM) -}}
-{{ body_option("UsePrivilegeSeparation",sshd_UsePrivilegeSeparation) -}}
 {{ body_option("VersionAddendum",sshd_VersionAddendum) -}}
 {{ body_option("X11DisplayOffset",sshd_X11DisplayOffset) -}}
 {{ body_option("X11Forwarding",sshd_X11Forwarding) -}}
